@@ -66,66 +66,12 @@ fun CourseCard(
                             color = MaterialTheme.colorScheme.onSurface
                         )
                     }
-//                    Text(
-//                        text = course.title,
-//                        style = MaterialTheme.typography.titleMedium,
-//                        color = MaterialTheme.colorScheme.onSurface
-//                    )
-//                    Spacer(modifier = Modifier.height(4.dp))
-//                    Text(
-//                        text = course.code,
-//                        style = MaterialTheme.typography.bodyMedium,
-//                        color = MaterialTheme.colorScheme.primary
-//                    )
-//                    Surface(
-//                        shape = MaterialTheme.shapes.small,
-//                        color = MaterialTheme.colorScheme.primaryContainer,
-//                        tonalElevation = 1.dp
-//                    ) {
-//                        Text(
-//                            text = course.code,
-//                            style = MaterialTheme.typography.bodyMedium,
-//                            color = MaterialTheme.colorScheme.onPrimaryContainer,
-//                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
-//                        )
-//                    }
                     Spacer(modifier = Modifier.height(2.dp))
                     Text(
                         text = "Credit Hours: ${course.creditHours}",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
-
-//                    Row(
-//                        verticalAlignment = Alignment.CenterVertically,
-//                        horizontalArrangement = Arrangement.SpaceBetween,
-//                        modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
-//                    ) {
-//                        Surface(
-//                            shape = MaterialTheme.shapes.small,
-//                            color = MaterialTheme.colorScheme.primaryContainer,
-//                            tonalElevation = 1.dp
-//                        ) {
-//                            Text(
-//                                text = course.code,
-//                                style = MaterialTheme.typography.bodyMedium,
-//                                color = MaterialTheme.colorScheme.onPrimaryContainer,
-//                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
-//                            )
-//                        }
-//                        Surface(
-//                            shape = MaterialTheme.shapes.small,
-//                            color = MaterialTheme.colorScheme.secondaryContainer,
-//                            tonalElevation = 1.dp
-//                        ) {
-//                            Text(
-//                                text = "Credit: ${course.creditHours}",
-//                                style = MaterialTheme.typography.bodySmall,
-//                                color = MaterialTheme.colorScheme.onSecondaryContainer,
-//                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
-//                            )
-//                        }
-//                    }
                 }
                 IconButton(onClick = onCardClick) {
                     Icon(
