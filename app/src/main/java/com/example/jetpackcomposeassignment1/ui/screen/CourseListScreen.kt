@@ -13,7 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.jetpackcomposeassignment1.data.DummyData
+import com.example.jetpackcomposeassignment1.DummyData
 import com.example.jetpackcomposeassignment1.model.Course
 import com.example.jetpackcomposeassignment1.ui.components.CourseCard
 import com.example.jetpackcomposeassignment1.ui.theme.JetpackComposeAssignment1Theme

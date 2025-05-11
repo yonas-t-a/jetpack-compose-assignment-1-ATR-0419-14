@@ -1,7 +1,6 @@
-package com.example.jetpackcomposeassignment1.data
+package com.example.jetpackcomposeassignment1
 
 import com.example.jetpackcomposeassignment1.model.Course
-
 
 object DummyData {
     val courses = listOf(
@@ -48,4 +47,4 @@ object DummyData {
             prerequisites = "CS301, CS305"
         )
     )
-} 
+}

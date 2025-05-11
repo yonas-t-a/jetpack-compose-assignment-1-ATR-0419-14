@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.jetpackcomposeassignment1.data.DummyData
+import com.example.jetpackcomposeassignment1.DummyData
 import com.example.jetpackcomposeassignment1.ui.screen.CourseListScreen
 import com.example.jetpackcomposeassignment1.ui.theme.JetpackComposeAssignment1Theme
 
