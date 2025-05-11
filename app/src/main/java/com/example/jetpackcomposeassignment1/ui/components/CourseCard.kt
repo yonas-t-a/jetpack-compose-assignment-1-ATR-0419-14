@@ -21,7 +21,7 @@ import com.example.jetpackcomposeassignment1.ui.theme.JetpackComposeAssignment1T
 @Composable
 fun CourseCard(
     course: Course,
-    expanded: Boolean,
+    isexpanded: Boolean,
     onCardClick: () -> Unit,
     modifier: Modifier = Modifier,
     shape: Shape = MaterialTheme.shapes.medium
@@ -75,16 +75,16 @@ fun CourseCard(
                 }
                 IconButton(onClick = onCardClick) {
                     Icon(
-                        imageVector = if (expanded) {
+                        imageVector = if (isexpanded) {
                             Icons.Filled.ExpandLess
                         } else {
                             Icons.Filled.ExpandMore
                                },
-                        contentDescription = if (expanded) "Collapse" else "Expand"
+                        contentDescription = if (isexpanded) "Collapse" else "Expand"
                     )
                 }
             }
-            if (expanded) {
+            if (isexpanded) {
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(
                     text = course.description,
@@ -115,7 +115,7 @@ fun PreviewCourseCardLight() {
                 description = "This is a sample course description.",
                 prerequisites = "None"
             ),
-            expanded = expanded,
+            isexpanded = expanded,
             onCardClick = { expanded = !expanded }
         )
     }
@@ -134,7 +134,7 @@ fun PreviewCourseCardDark() {
                 description = "This is a sample course description.",
                 prerequisites = "None"
             ),
-            expanded = expanded,
+            isexpanded = expanded,
             onCardClick = { expanded = !expanded }
         )
     }

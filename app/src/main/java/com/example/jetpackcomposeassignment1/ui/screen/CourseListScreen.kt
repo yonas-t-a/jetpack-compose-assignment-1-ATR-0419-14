@@ -59,7 +59,7 @@ fun CourseListScreen(
                 items(courses, key = { it.code }) { course ->
                     CourseCard(
                         course = course,
-                        expanded = expandedStates[course.code] == true,
+                        isexpanded = expandedStates[course.code] == true,
                         onCardClick = {
                             expandedStates[course.code] = !(expandedStates[course.code] ?: false)
                         }
