@@ -35,7 +35,7 @@ fun CourseCard(
             .animateContentSize(),
         tonalElevation = 2.dp,
         shape = shape,
-        color = MaterialTheme.colorScheme.surface
+        color = MaterialTheme.colorScheme.primaryContainer
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -47,7 +47,7 @@ fun CourseCard(
                     ) {
                         Surface(
                             shape = MaterialTheme.shapes.small,
-                            color = MaterialTheme.colorScheme.primaryContainer,
+                            color = MaterialTheme.colorScheme.surface,
                             tonalElevation = 1.dp
                         ) {
                             Text(
