@@ -11,6 +11,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -45,21 +46,14 @@ fun CourseCard(
                         horizontalArrangement = Arrangement.SpaceBetween,
                         modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
                     ) {
-                        Surface(
-                            shape = MaterialTheme.shapes.small,
-                            color = MaterialTheme.colorScheme.surface,
-                            tonalElevation = 1.dp
-                        ) {
-                            Text(
-                                text = course.code,
-                                style = MaterialTheme.typography.bodyMedium,
-                                color = MaterialTheme.colorScheme.onPrimaryContainer,
-                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
-                            )
-                        }
-                        Spacer(
-                            modifier = Modifier.width(8.dp),
+
+                        Text(
+                            text = course.code,
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onPrimaryContainer,
+                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
                         )
+                        Spacer(modifier = Modifier.width(8.dp))
                         Text(
                             text = course.title,
                             style = MaterialTheme.typography.titleMedium,
@@ -94,8 +88,7 @@ fun CourseCard(
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
                     text = "Prerequisites: ${course.prerequisites}",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.secondary
+                    color = Color.Black,
                 )
             }
         }
